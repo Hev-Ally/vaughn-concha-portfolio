@@ -1,4 +1,4 @@
-# Vaughn Concha — Junior Graphic Designer
+# Client — Junior Graphic Designer
 
 A responsive portfolio for graphic, digital, sportswear, and print design, with an interactive 3D model gallery. Visitors can select models from the gallery panel, then drag to rotate and scroll to zoom. The gallery currently has the basketball jersey plus a clearly labeled duplicate entry for testing the slide controls. Replace that test entry with a real model before publishing.
 
