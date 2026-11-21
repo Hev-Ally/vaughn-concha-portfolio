@@ -87,7 +87,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .hero-index { position: absolute; right: 0; bottom: 25px; left: 0; display: flex; justify-content: space-between; color: var(--muted); }
 
 .ticker { overflow: hidden; border-block: 1px solid var(--ink); background: var(--lime); }
-.ticker-track { display: flex; width: max-content; align-items: center; gap: 30px; padding: 13px 20px; animation: ticker-slide 34s linear infinite; font-size: 11px; font-weight: 800; letter-spacing: .1em; }
+.ticker-track { display: flex; width: max-content; align-items: center; padding-block: 13px; animation: ticker-slide 34s linear infinite; font-size: 11px; font-weight: 800; letter-spacing: .1em; }
+.ticker-group { display: flex; flex-shrink: 0; align-items: center; gap: 30px; padding-right: 30px; }
 .ticker-track i { color: var(--accent); font-size: 17px; font-style: normal; }
 
 .section { padding-block: 108px; }
@@ -133,6 +134,11 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .work-caption h3 { margin: 5px 0 0; font-size: 17px; letter-spacing: -.035em; }
 .work-number { color: var(--muted); font-family: var(--mono); font-size: 10px; }
 .work-description { max-width: 340px; margin: 9px 0 0; color: var(--muted); font-size: 11px; line-height: 1.7; }
+.project-image { position: relative; overflow: hidden; background: #ddd8cc; }
+.project-image img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform 350ms ease; }
+.work-card-large .project-image img { aspect-ratio: 4 / 3.25; }
+.project-image:hover img { transform: scale(1.025); }
+.project-image .art-kicker { top: 16px; left: 16px; border: 1px solid rgb(29 33 28 / 18%); padding: 7px 9px; background: rgb(250 248 243 / 92%); color: var(--ink); }
 
 .editorial-section { background: var(--paper); }
 .editorial-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }

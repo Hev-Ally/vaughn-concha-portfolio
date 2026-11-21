@@ -19,22 +19,6 @@ const models = [
       modelUrl: 'https://sketchfab.com/3d-models/basketball-jersey-3ee634a324d5400ab84555b0636416f6',
     },
   },
-  {
-    name: 'Basketball jersey (gallery test)',
-    type: 'TEST ITEM / SAME MODEL',
-    modelUrl: './assets/jersey.glb',
-    textureUrl: './assets/jersey-texture.png',
-    project: 'Basketball jersey gallery test',
-    format: 'Interactive 3D',
-    design: 'Sample gallery item',
-    artist: 'Vaughn Concha',
-    credit: {
-      artist: 'Sev',
-      artistUrl: 'https://sketchfab.com/sevclothing',
-      license: 'CC BY 4.0',
-      modelUrl: 'https://sketchfab.com/3d-models/basketball-jersey-3ee634a324d5400ab84555b0636416f6',
-    },
-  },
 ];
 
 const viewer = document.querySelector('#viewer');
