@@ -159,9 +159,12 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .software-card, .skill-group, .strengths-panel { border: 1px solid #d2cec4; padding: 21px; background: var(--paper-bright); }
 .software-card > .eyebrow, .strengths-panel > .eyebrow { margin-bottom: 16px; }
 .software-list { border-top: 1px solid var(--line); }
-.software-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--line); padding: 14px 0; }
+.software-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 10px 12px; border-bottom: 1px solid var(--line); padding: 14px 0; }
 .software-row strong { font-size: 11px; }
-.software-row span { color: var(--muted); font-family: var(--mono); font-size: 8px; text-align: right; }
+.software-row .software-level-label { color: var(--muted); font-family: var(--mono); font-size: 8px; text-align: right; }
+.software-level { grid-column: 1 / -1; height: 5px; overflow: hidden; background: repeating-linear-gradient(90deg, #484848 0 calc(20% - 3px), transparent calc(20% - 3px) 20%); }
+.software-level > span { display: block; width: var(--level, 0%); height: 100%; background: var(--accent); box-shadow: 0 0 12px rgb(210 255 0 / 28%); }
+.software-level.is-unrated { background: repeating-linear-gradient(90deg, #484848 0 calc(20% - 3px), transparent calc(20% - 3px) 20%); }
 .skill-groups { display: grid; grid-column: 2; grid-row: 1 / span 2; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 .skill-group h3, .profile-detail h3 { margin: 0 0 13px; font-size: 15px; letter-spacing: -.035em; }
 .skill-group ul { display: grid; gap: 9px; margin: 0; padding: 0; color: var(--muted); font-size: 10px; line-height: 1.55; list-style: none; }
