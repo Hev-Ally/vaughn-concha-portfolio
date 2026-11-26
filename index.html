@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f3f0e9">
+  <meta name="theme-color" content="#1e1e1e">
   <meta name="description" content="Portfolio of Vaughn Concha, Junior Graphic Designer focused on graphic design, digital design, sportswear, print production, and 3D jersey visualization.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Vaughn Concha — Junior Graphic Designer">
@@ -12,9 +12,10 @@
   <title>Vaughn Concha — Junior Graphic Designer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <script src="poster-wall.js" defer></script>
 </head>
 <body>
   <!-- Skip link improves keyboard and screen reader navigation. -->
@@ -44,14 +45,16 @@
 
   <main id="main">
     <!-- Hero section: introduction, portfolio headline, and visual identity artwork. -->
-    <section class="hero hero-profile wrap" id="home" aria-labelledby="hero-title">
+    <section class="hero hero-profile" id="home" aria-labelledby="hero-title">
+      <div class="poster-wall" id="poster-wall" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-copy">
-        <p class="eyebrow">JUNIOR GRAPHIC DESIGNER <span>/</span> DIGITAL DESIGN <span>/</span> SPORTSWEAR</p>
-        <h1 id="hero-title">Creative<br>thinking.<br><em>Intentional<br>design.</em></h1>
-        <p class="hero-intro">I’m Vaughn Concha, a junior graphic designer focused on purposeful visual communication, digital creativity, and design production.</p>
+        <p class="eyebrow">GRAPHIC DESIGN <span>/</span> POSTERS <span>/</span> VISUAL COMMUNICATION</p>
+        <h1 id="hero-title">Vaughn<br>Concha<span class="hero-period">.</span><br><em>Graphic<br>Designer.</em></h1>
+        <p class="hero-intro">I’m Vaughn Concha, a junior graphic designer creating posters, pubmats, and visual identities with purposeful communication.</p>
         <div class="hero-actions">
-          <a class="button button-accent" href="#work">View portfolio spaces <span aria-hidden="true">↓</span></a>
-          <a class="text-link" href="#about">About Vaughn <span aria-hidden="true">↗</span></a>
+          <a class="button button-accent" href="#work">View portfolio <span aria-hidden="true">↓</span></a>
+          <a class="button button-paper hero-contact" href="#contact">Contact <span aria-hidden="true">&#8599;</span></a>
         </div>
         <p class="hero-note"><span>PROJECT EXPERIENCE</span> Academic <i aria-hidden="true">·</i> Personal projects</p>
       </div>
@@ -86,35 +89,96 @@
             <p class="eyebrow">01 / SELECTED WORK</p>
             <h2 id="work-title">Selected projects.<br><em>Made with intention.</em></h2>
           </div>
-          <p class="heading-aside">A focused showcase of packaging, brand presentation, and sportswear design presented through polished mockups and real-world applications.</p>
+          <p class="heading-aside">A selection of poster edits and visual communication projects, alongside packaging and brand applications.</p>
         </div>
-        <!-- Project cards: each card contains an image, project label, title, and description. -->
-        <div class="work-grid">
-          <article class="work-card work-card-large">
-            <div class="project-image">
-              <img src="./assets/mockups/Gift%20Box.jpg" alt="Luxury gift box packaging mockup with a monogrammed brand mark">
-              <span class="art-kicker">PROJECT 01 / PACKAGING</span>
+        <!-- Projects are grouped by deliverable type for a clearer portfolio flow. -->
+        <div class="work-groups">
+          <section class="project-group" aria-labelledby="mockup-group-title">
+            <div class="project-group-heading">
+              <p class="eyebrow">GROUP 01</p>
+              <h3 id="mockup-group-title">Packaging &amp; Brand Mockups</h3>
             </div>
-            <div class="work-caption"><div><span class="project-type">PACKAGING &amp; BRAND PRESENTATION</span><h3>Luxury gift box</h3></div><span class="work-number">01</span></div>
-            <p class="work-description">A refined gift box concept combining a coordinated monogram, premium finishes, and elevated presentation.</p>
-          </article>
-          <article class="work-card">
-            <div class="project-image">
-              <img src="./assets/mockups/gift%20bag%20vk.jpg" alt="Premium gift bag mockup featuring a decorative brand monogram">
-              <span class="art-kicker">PROJECT 02 / PACKAGING</span>
+            <div class="work-grid mockup-grid">
+              <article class="work-card">
+                <div class="project-image">
+                  <img src="./assets/mockups/Gift%20Box.jpg" alt="Luxury gift box packaging mockup with a monogrammed brand mark">
+                  <span class="art-kicker">PROJECT 01 / PACKAGING</span>
+                </div>
+                <div class="work-caption"><div><span class="project-type">PACKAGING &amp; BRAND PRESENTATION</span><h3>Luxury gift box</h3></div><span class="work-number">01</span></div>
+                <p class="work-description">A refined gift box concept combining a coordinated monogram, premium finishes, and elevated presentation.</p>
+              </article>
+              <article class="work-card">
+                <div class="project-image">
+                  <img src="./assets/mockups/gift%20bag%20vk.jpg" alt="Premium gift bag mockup featuring a decorative brand monogram">
+                  <span class="art-kicker">PROJECT 02 / PACKAGING</span>
+                </div>
+                <div class="work-caption"><div><span class="project-type">PACKAGING DESIGN</span><h3>Retail gift bag</h3></div><span class="work-number">02</span></div>
+                <p class="work-description">A cohesive packaging application designed to preserve brand recognition across custom retail materials.</p>
+              </article>
+              <article class="work-card">
+                <div class="project-image">
+                  <img src="./assets/mockups/CoFPC%20Mockup%20copy%202.jpg" alt="Floral bouquet presentation mockup featuring coordinated packaging and brand details">
+                  <span class="art-kicker">PROJECT 03 / BRAND APPLICATION</span>
+                </div>
+                <div class="work-caption"><div><span class="project-type">PRODUCT &amp; BRAND DESIGN</span><h3>Floral presentation</h3></div><span class="work-number">03</span></div>
+                <p class="work-description">A visually consistent product presentation combining typography, packaging, and carefully arranged brand elements.</p>
+              </article>
             </div>
-            <div class="work-caption"><div><span class="project-type">PACKAGING DESIGN</span><h3>Retail gift bag</h3></div><span class="work-number">02</span></div>
-            <p class="work-description">A cohesive packaging application designed to preserve brand recognition across custom retail materials.</p>
-          </article>
-          <article class="work-card">
-            <div class="project-image">
-              <img src="./assets/mockups/CoFPC%20Mockup%20copy%202.jpg" alt="Floral bouquet presentation mockup featuring coordinated packaging and brand details">
-              <span class="art-kicker">PROJECT 03 / BRAND APPLICATION</span>
+          </section>
+          <section class="project-group" aria-labelledby="poster-group-title">
+            <div class="project-group-heading">
+              <p class="eyebrow">GROUP 02</p>
+              <h3 id="poster-group-title">Poster &amp; Editorial Design</h3>
             </div>
-            <div class="work-caption"><div><span class="project-type">PRODUCT &amp; BRAND DESIGN</span><h3>Floral presentation</h3></div><span class="work-number">03</span></div>
-            <p class="work-description">A visually consistent product presentation combining typography, packaging, and carefully arranged brand elements.</p>
-          </article>
+            <div class="work-grid poster-grid">
+              <article class="work-card work-card-poster">
+                <div class="project-image poster-project-image">
+                  <button class="poster-open" type="button" aria-label="View Adobo poster" data-title="Adobo">
+                    <img src="./assets/posters/adobo.jpg" alt="">
+                  </button>
+                  <span class="art-kicker">PROJECT 04 / POSTER DESIGN</span>
+                </div>
+                <div class="work-caption"><div><span class="project-type">POSTER EDIT</span><h3>Adobo</h3></div><span class="work-number">04</span></div>
+                <p class="work-description">A food-themed poster edit focused on strong imagery and clear visual hierarchy.</p>
+              </article>
+              <article class="work-card work-card-poster">
+                <div class="project-image poster-project-image">
+                  <button class="poster-open" type="button" aria-label="View LeBuddah poster" data-title="LeBuddah">
+                    <img src="./assets/posters/lebuddah.jpg" alt="">
+                  </button>
+                  <span class="art-kicker">PROJECT 05 / POSTER DESIGN</span>
+                </div>
+                <div class="work-caption"><div><span class="project-type">POSTER EDIT</span><h3>LeBuddah</h3></div><span class="work-number">05</span></div>
+                <p class="work-description">A poster composition exploring image treatment, typography, and visual balance.</p>
+              </article>
+              <article class="work-card work-card-poster">
+                <div class="project-image poster-project-image">
+                  <button class="poster-open" type="button" aria-label="View Oil Price Hike poster" data-title="Oil Price Hike">
+                    <img src="./assets/posters/oil%20price%20hike.jpg" alt="">
+                  </button>
+                  <span class="art-kicker">PROJECT 06 / EDITORIAL POSTER</span>
+                </div>
+                <div class="work-caption"><div><span class="project-type">EDITORIAL POSTER</span><h3>Oil price hike</h3></div><span class="work-number">06</span></div>
+                <p class="work-description">An editorial poster edit about rising oil prices, with the subject made clear at a glance.</p>
+              </article>
+              <article class="work-card work-card-poster">
+                <div class="project-image poster-project-image">
+                  <button class="poster-open" type="button" aria-label="View Pax Silica poster" data-title="Pax Silica">
+                    <img src="./assets/posters/pax%20silica.jpg" alt="">
+                  </button>
+                  <span class="art-kicker">PROJECT 07 / POSTER DESIGN</span>
+                </div>
+                <div class="work-caption"><div><span class="project-type">POSTER EDIT</span><h3>Pax Silica</h3></div><span class="work-number">07</span></div>
+                <p class="work-description">A poster edit pairing product imagery and typography in a focused composition.</p>
+              </article>
+            </div>
+          </section>
         </div>
+        <dialog class="poster-preview" id="poster-preview" aria-label="Poster preview">
+          <button class="poster-preview-close" type="button" aria-label="Close poster preview">CLOSE <span aria-hidden="true">×</span></button>
+          <img class="poster-preview-image" id="poster-preview-image" alt="">
+          <p class="poster-preview-title" id="poster-preview-title"></p>
+        </dialog>
       </div>
     </section>
 

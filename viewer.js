@@ -245,11 +245,11 @@ if (renderer) {
   keyLight.position.set(4, 6, 5);
   scene.add(keyLight);
 
-  const fillLight = new THREE.DirectionalLight(0x9dbdff, 1.5);
+  const fillLight = new THREE.DirectionalLight(0xfe0149, 1.2);
   fillLight.position.set(-5, 2, -4);
   scene.add(fillLight);
 
-  const rimLight = new THREE.DirectionalLight(0xffffff, 2);
+  const rimLight = new THREE.DirectionalLight(0xd2ff00, 1.4);
   rimLight.position.set(0, 3, -5);
   scene.add(rimLight);
 
