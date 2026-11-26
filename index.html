@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<!-- Document metadata, social sharing information, fonts, and stylesheet/script links. -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +17,9 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+  <!-- Skip link improves keyboard and screen reader navigation. -->
   <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Site header: brand identity, main navigation, and contact/menu actions. -->
   <header class="site-header">
     <div class="header-inner wrap">
       <a class="brand" href="#home" aria-label="Vaughn Concha, home">
@@ -40,6 +43,7 @@
   </header>
 
   <main id="main">
+    <!-- Hero section: introduction, portfolio headline, and visual identity artwork. -->
     <section class="hero hero-profile wrap" id="home" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow">JUNIOR GRAPHIC DESIGNER <span>/</span> DIGITAL DESIGN <span>/</span> SPORTSWEAR</p>
@@ -62,6 +66,7 @@
       <div class="hero-index"><span>01 — 06</span><span>PORTFOLIO / 2026</span></div>
     </section>
 
+    <!-- Animated ticker: highlights the designer's primary areas of expertise. -->
     <div class="ticker" aria-label="Graphic design, digital design, sportswear design, and print production">
       <div class="ticker-track" aria-hidden="true">
         <div class="ticker-group">
@@ -73,6 +78,7 @@
       </div>
     </div>
 
+    <!-- Selected work: portfolio projects for packaging and brand presentation. -->
     <section class="section work-section" id="work" aria-labelledby="work-title">
       <div class="wrap">
         <div class="section-heading heading-row">
@@ -82,6 +88,7 @@
           </div>
           <p class="heading-aside">A focused showcase of packaging, brand presentation, and sportswear design presented through polished mockups and real-world applications.</p>
         </div>
+        <!-- Project cards: each card contains an image, project label, title, and description. -->
         <div class="work-grid">
           <article class="work-card work-card-large">
             <div class="project-image">
@@ -111,6 +118,7 @@
       </div>
     </section>
 
+    <!-- Expertise: software proficiency, design skills, and professional strengths. -->
     <section class="section expertise-section" id="skills" aria-labelledby="skills-title">
       <div class="wrap">
         <div class="section-heading heading-row">
@@ -120,6 +128,7 @@
           </div>
           <p class="heading-aside">A growing professional toolkit spanning graphic, digital, sportswear, and print design.</p>
         </div>
+        <!-- Skills layout: software levels, design categories, and professional strengths. -->
         <div class="expertise-layout">
           <article class="software-card">
             <p class="eyebrow">SOFTWARE PROFICIENCY</p>
@@ -186,6 +195,7 @@
       </div>
     </section>
 
+    <!-- 3D collection: interactive jersey viewer, model selector, and project details. -->
     <section class="section three-d-section" id="three-d" aria-labelledby="three-d-title">
       <div class="wrap">
         <div class="section-heading heading-row three-d-heading">
@@ -195,6 +205,7 @@
           </div>
           <p class="heading-aside">Explore the interactive jersey viewer. Drag to rotate the model and scroll to zoom in on its details.</p>
         </div>
+        <!-- Three.js viewer: loading status and controls for the interactive model. -->
         <div class="viewer-shell" id="viewer">
           <div class="viewer-topline"><span>INTERACTIVE MODEL GALLERY</span><span class="viewer-live"><i aria-hidden="true"></i> LIVE PREVIEW</span></div>
           <div class="loading" id="loading" role="status" aria-live="polite">LOADING 3D MODEL...</div>
@@ -204,6 +215,7 @@
           </div>
           <p class="viewer-hint">DRAG TO ROTATE <span>·</span> SCROLL TO ZOOM</p>
         </div>
+        <!-- Model collection: navigation controls and selectable 3D models. -->
         <div class="model-gallery" aria-label="3D model collection">
           <div class="gallery-heading">
             <div>
@@ -218,6 +230,7 @@
           </div>
           <div class="model-track" id="modelTrack" role="group" aria-label="Available 3D models"></div>
         </div>
+        <!-- Model metadata: identifies the displayed jersey project, format, and creator. -->
         <div class="model-details">
           <div><span>PROJECT</span><strong>Basketball jersey</strong></div>
           <div><span>FORMAT</span><strong>Interactive 3D</strong></div>
@@ -228,6 +241,7 @@
       </div>
     </section>
 
+    <!-- Jersey gallery: real-world basketball and sportswear editorial photography. -->
     <section class="section editorial-section" id="jersey-gallery" aria-labelledby="jersey-gallery-title">
       <div class="wrap">
         <div class="section-heading heading-row">
@@ -237,6 +251,7 @@
           </div>
           <p class="heading-aside">A curated selection of live jersey activity, basketball action, and sportswear applications captured in real environments.</p>
         </div>
+        <!-- Editorial gallery: seven captioned real-world jersey images. -->
         <div class="editorial-grid">
           <figure class="editorial-card"><img src="./assets/rt%20pics/778972816_1736352460933668_878488938829705605_n.jpg" alt="Basketball player holding the ball during a live game"><figcaption>Game presentation / 01</figcaption></figure>
           <figure class="editorial-card"><img src="./assets/rt%20pics/784797430_1897486334559864_6331850245742157210_n.jpg" alt="Basketball player on court under stadium lighting"><figcaption>Player focus / 02</figcaption></figure>
@@ -249,12 +264,14 @@
       </div>
     </section>
 
+    <!-- About: professional profile, technical experience, and education background. -->
     <section class="section about-section" id="about" aria-labelledby="about-title">
       <div class="wrap about-layout">
         <div class="section-heading">
           <p class="eyebrow">05 / PROFESSIONAL INTRODUCTION</p>
           <h2 id="about-title">Design beyond<br><em>appearance.</em></h2>
         </div>
+        <!-- Professional profile: biography, 3D experience, education, and project experience. -->
         <div class="about-copy">
           <p class="about-lead">I am a junior graphic designer with an interest in visual communication, digital creativity, and design production.</p>
           <p>My work focuses on creating visually engaging designs that balance creativity, functionality, and attention to detail. I have experience exploring different areas of graphic design, particularly sportswear and sublimation jersey layouts, promotional materials, and digital advertising creatives. I enjoy transforming ideas and references into organized, purposeful visual compositions.</p>
@@ -285,6 +302,7 @@
       </div>
     </section>
 
+    <!-- Contact: call-to-action and email address for project inquiries. -->
     <section class="contact-section" id="contact" aria-labelledby="contact-title">
       <div class="wrap contact-layout">
         <div>
@@ -299,6 +317,7 @@
     </section>
   </main>
 
+  <!-- Footer: brand, copyright, top-of-page link, and model attribution note. -->
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <a class="brand footer-brand" href="#home" aria-label="Vaughn Concha, back to top"><span class="brand-mark" aria-hidden="true">V<span>.</span></span><span class="brand-name">VAUGHN CONCHA <span>JUNIOR GRAPHIC DESIGNER</span></span></a>
@@ -308,6 +327,7 @@
     <div class="wrap attribution">Interactive 3D model credits are listed above the footer.</div>
   </footer>
 
+  <!-- Import map: resolves Three.js modules used by the interactive 3D viewer. -->
   <script type="importmap">
   {
     "imports": {
@@ -316,6 +336,7 @@
     }
   }
   </script>
+  <!-- Loads the ES module that initializes and controls the jersey 3D viewer. -->
   <script type="module" src="viewer.js"></script>
 </body>
 </html>
